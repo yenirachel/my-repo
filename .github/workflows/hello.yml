@@ -1,8 +1,9 @@
 name : Hello #워크플로우명
 on : push # 이벤트(푸시할때 실행)
+
 jobs: #잡 정의/
   hello: #잡 id
-  runs-on: ubuntu-latest #러너 : 실행환경 - 우분투
-  steps : #스텝 정의
-    - run: echo "Hello, World!" #셀 명령어 실행
-    - uses : actions/checkout@v2 # 액션호출
+    runs-on: ubuntu-latest #러너 : 실행환경 - 우분투
+    steps : #스텝 정의
+      - run: echo "Hello, World!" #셀 명령어 실행
+      - uses : actions/checkout@v2 # 액션호출
